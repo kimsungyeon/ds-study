@@ -97,4 +97,4 @@ FROM sborder.orders a
    AND a.part_date < '#[endDate]#'
    AND a.service_type = 'BAEMIN'
    AND a.order_datetime >= CAST('#[startDate]#' AS timestamp)
-   AND a.order_datetime < CAST('#[endDate]#' AS timestamp)
+    ON a.order_datetime < CAST('#[endDate]#' AS timestamp)
